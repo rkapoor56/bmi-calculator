@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1>All Entries</h1>
+    <table style="width:30%">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>BMI</th>
+        </tr>
+        {% for entry in entries %}
+        <tr>
+            <td>{{entry.id}}</td>
+            <td>{{entry.name}}</td>
+            <td>{{entry.email}}</td>
+            <td>{{entry.age}}</td>
+            <td>{{entry.bmi}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+
+</html>
